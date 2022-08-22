@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<!-- wowjs -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/animate.css">
+<!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Toggle -->
+    <div class="toggle">
+      <input type="checkbox" id="toggleMode" hidden />
+      <label for="toggleMode"></label>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="nav-bar">
+        <a href="" class="logo">Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigations">
+          <div class="nav-list">
+            <a href=""><i class="fa-solid fa-house-user"></i> Trang chủ</a>
+            <a href=""><i class="fa-solid fa-newspaper"></i> Tin tức</a>
+            <a href=""><i class="fa-solid fa-address-card"></i> Liên hệ</a>
+            <a href=""><i class="fa-solid fa-percent"></i> Khuyến mãi</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <video
+        class="video-slider active"
+        src="assets/img/3.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slider"
+        src="assets/img/2.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slider"
+        src="assets/img/4.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slider"
+        src="assets/img/5.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slider"
+        src="assets/img/6.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="banner-content active wow animate__fadeInLeft "  data-wow-time = "2s" data-wow-delay = "1s" data-wow-offset = "10" data-wow-iteration = "1">
+        <h1 class="content-title">Phú Yên.</h1>
+        <span class="" >Du lịch Phú Yên</span>
+        <p class="content-desc">
+          Nhắc đến Phú Yên là nhắc về xứ nẫu bình dị, là về mảnh đất hoa vàng cỏ
+          xanh xinh đẹp. Thế nhưng Phú Yên còn cất giấu nhiều điều thú vị hơn
+          thế. Đó là rừng, là biển, là đảo, cùng những câu chuyện văn hóa – lịch
+          sử thú vị. Còn chờ gì nữa mà không mang theo kinh nghiệm du lịch Phú
+          Yên này là lên đường khám phá vùng đất xinh đẹp này đi thôi!
+        </p>
+        <button class="content-btn">Xem thêm</button>
+      </div>
+      <div class="banner-content wow animate__fadeInLeft" data-wow-time = "2s" data-wow-delay = "1s" data-wow-offset = "10" data-wow-iteration = "1">
+        <h1 class="content-title">Quảng Ninh</h1>
+        <span>Du lịch Quảng Ninh</span>
+        <p class="content-desc">
+          Quảng Ninh là thành phố Đông Bắc nước ta, được thiên nhiên ưu đãi ban
+          tặng cả núi non, sông nước và biển đảo. Những địa điểm du lịch Quảng
+          Ninh đã và đang thu hút sự chú ý của du khách bốn phương. Mỗi điểm đến
+          ở thành phố này có một sức hút riêng biệt khó cưỡng lại.
+        </p>
+        <button class="content-btn">Xem thêm</button>
+      </div>
+      <div class="banner-content wow animate__fadeInLeft" data-wow-time = "2s" data-wow-delay = "1s" data-wow-offset = "10" data-wow-iteration = "1">
+        <h1 class="content-title">Đồng Tháp</h1>
+        <span>Du lịch Đồng Tháp</span>
+        <p class="content-desc">
+          Với diện tích trải rộng ở cả hai bờ sông Tiền, Đồng Tháp nổi tiếng với
+          các cánh đồng lúa trù phú chạy dọc theo những con kênh hiền hòa cùng
+          những cánh rừng nguyên sinh và hồ sen thơm ngát. Không chỉ có thiên
+          nhiên rực rỡ, vùng đất miền Tây Nam Bộ này còn có rất nhiều tọa độ du
+          hí thú vị dành cho hội mê xê dịch. Cùng Traveloka điểm danh ngay và
+          luôn top 8 địa điểm du lịch Đồng Tháp hấp dẫn nhất nhé!
+        </p>
+        <button class="content-btn">Xem thêm</button>
+      </div>
+      <div class="banner-content wow animate__fadeInLeft" data-wow-time = "2s" data-wow-delay = "1s" data-wow-offset = "10" data-wow-iteration = "1">
+        <h1 class="content-title">Lâm Đồng</h1>
+        <span>Du lịch Lâm Đồng</span>
+        <p class="content-desc">
+          Lâm Đồng là một trong 5 tỉnh phát triển mạnh mẽ về văn hóa, kinh tế,
+          chính trị ở Tây Nguyên. Với khí hậu mát mẻ quanh năm, các địa điểm du
+          lịch Lâm Đồng đều sở hữu không khí trong lành, yên bình với đủ loại
+          hình du lịch. Đặc biệt, từ Lâm Đồng, bạn có thể kết hợp du lịch đến
+          các địa điểm lân cận như Đà Lạt, Bảo Lộc, Di Linh hay Cát Tiên.
+        </p>
+        <button class="content-btn">Xem thêm</button>
+      </div>
+      <div class="banner-content wow animate__fadeInLeft" data-wow-time = "2s" data-wow-delay = "1s" data-wow-offset = "10" data-wow-iteration = "1">
+        <h1 class="content-title">Đà Nẵng</h1>
+        <span>Du lịch Đà Nẵng</span>
+        <p class="content-desc">
+          Là thành phố lớn nhất miền Trung, Đà Nẵng khoác lên mình sự nhộn nhịp
+          và huyên náo của một trung tâm kinh tế - văn hóa lớn nhất khu vực.
+          Được bao bọc bởi biển cả xanh ngát và núi non hùng vĩ, đây là thành
+          phố đáng sống với nhiều thắng cảnh làm say lòng người cùng những giá
+          trị văn hóa độc đáo. Con người Đà Nẵng bình dị, mến khách đã trở thành
+          biểu tượng của mảnh đất này.
+        </p>
+        <button class="content-btn">Xem thêm</button>
+      </div>
+      <div class="banner-social">
+        <a href=""><i class="fa-brands fa-facebook banner-social__icon"></i></a>
+        <a href=""
+          ><i class="fa-brands fa-instagram banner-social__icon"></i
+        ></a>
+        <a href=""><i class="fa-brands fa-twitter banner-social__icon"></i></a>
+      </div>
+      <div class="btn-slider__list">
+        <div class="btn-slider active"></div>
+        <div class="btn-slider"></div>
+        <div class="btn-slider"></div>
+        <div class="btn-slider"></div>
+        <div class="btn-slider"></div>
+      </div>
+    </section>
+
+    <section class="tour">
+      <div class="tour-header">
+        <span class="tour-header__title active">Du lịch Trong nước</span>
+        <span class="tour-header__title">Du lịch Nước ngoài</span>
+      </div>
+      <div class="tour-body__tab active">
+        <div class="tour-content">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Điểm đi</span>
+          <select name="" id="">
+            <option value="">Nơi khởi hành</option>
+            <option value="">hồ chí minh</option>
+            <option value="">hà nội</option>
+            <option value="">đà nãng</option>
+            <option value="">cần thơ</option>
+            <option value="">hải phòng</option>
+            <option value="">bình dương</option>
+            <option value="">nha trang</option>
+            <option value="">huế</option>
+            <option value="">quy nhơn</option>
+            <option value="">phú quốc</option>
+            <option value="">long xuyên</option>
+          </select>
+        </div>
+        <div class="tour-icon">
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Điểm đến</span>
+          <select name="" id="">
+            <option value="">hãy chọn địa điểm đến</option>
+            <option value="">hồ chí minh</option>
+            <option value="">hà nội</option>
+            <option value="">đà nãng</option>
+            <option value="">cần thơ</option>
+            <option value="">hải phòng</option>
+            <option value="">bình dương</option>
+            <option value="">nha trang</option>
+            <option value="">huế</option>
+            <option value="">quy nhơn</option>
+            <option value="">phú quốc</option>
+            <option value="">long xuyên</option>
+          </select>
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Ngày đi</span>
+          <input type="date" />
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Số ngày</span>
+          <select name="" id="">
+            <option value="">Tất cả</option>
+            <option value="">1-3 ngày</option>
+            <option value="">4-7 ngày</option>
+            <option value="">8-14 ngày</option>
+            <option value="">Trên 14 ngày</option>
+          </select>
+        </div>
+        <div class="tour-button">
+          <button class="tour-btn">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="tour-body__tab">
+        <div class="tour-content">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Điểm đi</span>
+          <select name="" id="">
+            <option value="">Nơi khởi hành</option>
+            <option value="">hồ chí minh</option>
+            <option value="">hà nội</option>
+            <option value="">đà nãng</option>
+            <option value="">cần thơ</option>
+            <option value="">hải phòng</option>
+            <option value="">bình dương</option>
+            <option value="">nha trang</option>
+            <option value="">huế</option>
+            <option value="">quy nhơn</option>
+            <option value="">phú quốc</option>
+            <option value="">long xuyên</option>
+          </select>
+        </div>
+        <div class="tour-icon">
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Điểm đến</span>
+          <select name="" id="">
+            <option value="">hãy chọn địa điểm đến</option>
+            <option value="">ai cập</option>
+            <option value="">ấn độ</option>
+            <option value="">anh áo</option>
+            <option value="">ba lan</option>
+            <option value="">bỉ</option>
+            <option value="">bồ đào nha</option>
+            <option value="">brazil</option>
+            <option value="">brunei</option>
+            <option value="">qcộng hòa séc</option>
+            <option value="">đài loan</option>
+            <option value="">hy lạp</option>
+          </select>
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Ngày đi</span>
+          <input type="date" />
+        </div>
+        <div class="tour-content">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Số ngày</span>
+          <select name="" id="">
+            <option value="">Tất cả</option>
+            <option value="">0-3 ngày</option>
+            <option value="">3-7 ngày</option>
+            <option value="">7-14 ngày</option>
+            <option value="">14-28 ngày</option>
+          </select>
+        </div>
+        <div class="tour-button">
+          <button class="tour-btn">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+<!-- place love -->
+    <div class="place-love wow animate__fadeInRightBig"  data-wow-offset = "10" data-wow-iteration = "1">
+      <h2 class="place-love__title">Điểm đến yêu thích</h2>
+      <div class="place-love__wrapper">
+        <div class="content">
+          <img class="content-img" src="assets/img/phuyen.jpg" alt="" />
+          <p class="content-name">Phú yên</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/sapa.jpg" alt="" />
+          <p class="content-name">Sa Pa</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/hcm.jpg" alt="" />
+          <p class="content-name">Hồ Chí Minh</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/hanoi.jpg" alt="" />
+          <p class="content-name">Hà Nội</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/halong.jpg" alt="" />
+          <p class="content-name">Quảng Ninh</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/dongthap.jpg" alt="" />
+          <p class="content-name">Đồng Tháp</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/danang.jpg" alt="" />
+          <p class="content-name">Đà Nẵng</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/dalat.jpg" alt="" />
+          <p class="content-name">Đà Lạt</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/caobang.jpg" alt="" />
+          <p class="content-name">Cao Bằng</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/binhthuan.jpg" alt="" />
+          <p class="content-name">Bình Thuận</p>
+        </div>
+        <div class="content">
+          <img class="content-img" src="assets/img/binhdinh.jpg" alt="" />
+          <p class="content-name">Bình Định</p>
+        </div>
+      </div>
+    </div>
+    <!-- product-sale -->
+    <div class="product-sale">
+      <h2 class="product-sale__title">Các gói ưu đãi đặc biệt</h2>
+      <div class="product-sale__wrapper wow animate__fadeInLeftBig"  data-wow-offset = "10" data-wow-iteration = "1">
+        <img class="product-sale__img" src="assets/img/singabo.jpg" alt="" />
+        <div class="product-sale__content">
+          <h3>
+            Singapore: Combo Vé máy bay khứ hồi + 3 đêm khách sạn Ibis Singapore
+            3* + Ăn sáng + Tặng vé vào vườn hoa diệu kỳ Floral Fantasy
+          </h3>
+          <p>Trải nghiệm kỳ nghỉ tuyệt vời trên bãi biển</p>
+          <span> <i class="fa-solid fa-location-pin"></i> Singapore</span>
+        </div>
+        <div class="product-sale__left">
+          <p>(12 reviews)</p>
+          <img src="assets/img/rating.png" alt="" />
+          <h2>8,590,000₫ /khách</h2>
+          <button>Đặt ngay</button>
+        </div>
+      </div>
+      <div class="product-sale__wrapper wow animate__fadeInRightBig"  data-wow-offset = "10" data-wow-iteration = "1">
+        <img class="product-sale__img" src="assets/img/phuquoc.jpg" alt="" />
+        <div class="product-sale__content">
+          <h3>Combo 3N2Đ VinOasis Phú Quốc</h3>
+          <p>
+            Vé máy bay khứ hồi + Phòng Standard + Ăn sáng + Xe đưa đón sân bay +
+            Khám phá Vinpearl Safari + Trải nghiệm VinWonders không giới hạn
+          </p>
+          <span>
+            <i class="fa-solid fa-location-pin"></i> Bãi Dài, Gành Dầu, Phú
+            Quốc, tỉnh Kiên Giang, Việt Nam</span
+          >
+        </div>
+        <div class="product-sale__left">
+          <p>(43 reviews)</p>
+          <img src="assets/img/rating.png" alt="" />
+          <h2>5,360,000₫ /khách</h2>
+          <button>Đặt ngay</button>
+        </div>
+      </div>
+      <div class="product-sale__wrapper wow animate__fadeInLeftBig"  data-wow-offset = "10" data-wow-iteration = "1">
+        <img class="product-sale__img" src="assets/img/thailan.jpg" alt="" />
+        <div class="product-sale__content">
+          <h3>
+            Thái Lan: Combo 3N2Đ Vé máy bay khứ hồi + 2 đêm phòng khách sạn Asia
+            Hotel Bangkok 4* + Ăn sáng + Tặng thẻ Oneday Pass BTS Sky Train - Lễ
+            2/9
+          </h3>
+          <p>Vé máy bay + Phòng khách sạn</p>
+          <span>
+            <i class="fa-solid fa-location-pin"></i> 296 Phaya Thai Rd, Thanon
+            Phetchaburi, Ratchathewi, Bangkok</span
+          >
+        </div>
+        <div class="product-sale__left">
+          <p>(65 reviews)</p>
+          <img src="assets/img/rating.png" alt="" />
+          <h2>7,990,000₫ /khách</h2>
+          <button>Đặt ngay</button>
+        </div>
+      </div>
+      <div class="product-sale__wrapper wow animate__fadeInRightBig"  data-wow-offset = "10" data-wow-iteration = "1">
+        <img class="product-sale__img" src="assets/img/thailan.jpg" alt="" />
+        <div class="product-sale__content">
+          <h3>
+            Thái Lan: Combo 3N2Đ Vé máy bay khứ hồi + 2 đêm phòng khách sạn
+            Picnic Hotel Bangkok 3* + Ăn sáng + Tặng thẻ Oneday Pass BTS Sky
+            Train - Lễ 2/9
+          </h3>
+          <p>Vé máy bay + Phòng khách sạn</p>
+          <span>
+            <i class="fa-solid fa-location-pin"></i> 39 Rangnam Road Rajprarop
+            Phayathai, 10400 Bangkok, Thái Lan</span
+          >
+        </div>
+        <div class="product-sale__left">
+          <p>( 25 Review )</p>
+          <img src="assets/img/rating.png" alt="" />
+          <h2>7,990,000₫ /khách</h2>
+          <button>Đặt ngay</button>
+        </div>
+      </div>
+    </div>
+    <!--checkin-->
+    <div class="checkin">
+      <!-- <img src="assets/img/landing-headers-background.jpg" alt="" /> -->
+      <div class="checkin-list">
+        <div class="wrapper">
+          <div class="image ">
+            <img class="wow animate__backInRight"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel1.jpeg" alt="" />
+          </div>
+          <div class="image">
+            <img class="wow animate__backInRight"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel2.jpeg" alt="" />
+          </div>
+          <div class="image">
+            <img class="wow animate__backInUp"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel3.jpeg" alt="" />
+          </div>
+          <div class="image">
+            <img class="wow animate__backInUp"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel4.jpeg" alt="" />
+          </div>
+          <div class="image">
+            <img class="wow animate__backInUp"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel5.jpeg" alt="" />
+          </div>
+          <div class="image">
+            <img class="wow animate__backInLeft"  data-wow-offset = "10" data-wow-iteration = "1" src="./assets/img/travel6jpeg.jpeg" alt="" />
+          </div>
+        </div>
+        
+        <div class="gallery">
+        <span class="control">
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </span>
+        <div class="gallery-image">
+          <img src="assets/img/undraw_Beach_day_cv97.png" alt="" />
+        </div>
+        <span class="control">
+          <i class="fa-solid fa-angle-left btn-pre"></i>
+        </span>
+        <span class="control">
+          <i class="fa-solid fa-angle-right btn-next"></i>
+        </span>
+      </div>
+    </div>
+    </div>
+    <!-- Blog -->
+    <div class="blog">
+      <h2>Bài Viết của chúng tôi</h2>
+      <div class="blog-wrapper">
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/2.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>Ngắm Quy Nhơn, Phú Yên cực chill từ gia đình dễ thương</h4>
+            <span
+              >Trong một chuyến du lịch cùng gia đình đến Quy Nhơn và Phú Yên
+              kéo dài 12 ngày, anh Trương Mạnh Huy (34 tuổi, làm nghề nhiếp ảnh
+              tại Hà Nội) đã thực hiện bộ ảnh ghi lại khoảnh khắc hạnh phúc bên
+              gia đình nhỏ. Đặc biệt, bộ ảnh…</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/3.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>
+              Khám phá núi lửa Bromo, Indonesia – một trong số núi lửa đang hoạt
+              động đẹp nhất thế giới
+            </h4>
+            <span
+              >Sau núi tuyết, mình đã đến được núi lửa. Bromo nằm ở vành đai núi
+              lửa Thái Bình Dương, nổi tiếng là 1 trong 5 ngọn núi lửa vẫn còn
+              đang hoạt động và đẹp nhất trên thế giới. Điều tạo nên sự khác
+              biệt không lẫn vào đâu có…</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/4.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>Kinh nghiệm du lịch Nam Định 2 ngày cực chi tiết</h4>
+            <span
+              >Nam Định là thành phố của những toà lâu đài nguy nga, hùng vĩ, đồ
+              ăn siêu ngon, bổ ,rẻ và người dân cực kỳ thân thiện. Chắc chắn sẽ
+              quay lại Nam Định 1 ngày không xa. Cùng theo chân nhóm bạn khám
+              phá du lịch Nam Định nhé!</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/5.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>Chùa Bái Đính – Ngôi chùa nắm giữ nhiều kỉ lục nhất Châu Á</h4>
+            <span
+              >Chùa Bái Đính (Ninh Bình) khoác lên mình vẻ đẹp thanh tịnh, cổ
+              kính giữa khung cảnh mênh mông rừng núi, nổi bật với lối kiến trúc
+              nguy nga nhưng mang đậm màu sắc truyền thống văn hóa dân tộc. Chùa
+              Bái Đính được cả thế giới ca ngợi là…</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/6.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>
+              Phú Yên đâu chỉ có “hoa vàng trên cỏ xanh”, còn nhiều cảnh đẹp như
+              tranh chờ bạn khám phá
+            </h4>
+            <span
+              >Hổm giờ thấy mọi người rần rần vi vu du lịch Phú Yên làm tui nhất
+              quyết phải xách balo lên và đi ngay. Chuyến đi 3 ngày 2 đêm nhưng
+              khám phá hết 8 địa điểm, mệt nhưng có hình đẹp thì vui liền.</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/7.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>Review du lịch ChiangMai, Bangkok: Thái Lan ngày trở lại</h4>
+            <span
+              >“Review chuyến du lịch Thái Lan sau hơn hai năm xa cách – cùng tớ
+              khám phá một Thái Lan xinh đẹp và mới mẻ nha.” Cùng theo chân cô
+              bạn xinh đẹp Thùy Dương khám phá du lịch ChiangMai, Bangkok, Thái
+              Lan bạn nhé!</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/8.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>Review lịch trình du lịch Cô Tô 2N1Đ chỉ 1tr8/người</h4>
+            <span
+              >Mùa hè mà không đi biển là bạn đang chống lại mẹ thiên nhiên đấy,
+              đi Cô Tô liền bạn nha!</span
+            >
+          </div>
+        </div>
+        <div class="blog-items wow animate__zoomIn"  data-wow-offset = "10" data-wow-iteration = "1">
+          <img src="assets/img/1.jpg" alt="" />
+          <div class="blog-items__content">
+            <h4>
+              Du lịch Phú Quốc cùng người thương – Thanh xuân nhất định phải một
+              lần bạn nhé!
+            </h4>
+            <span
+              >Cùng theo chân cặp đôi của cô bạn xinh đẹp Ngan Bella khám phá
+              Phú Quốc đáng nhớ nhé. Lưu ngay bài viết Du lịch Phú Quốc cùng
+              người thương – Thanh xuân nhất định phải một lần bạn nhé!</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <img class="wow animate__fadeInRightBig" data-wow-offset = "10" data-wow-iteration = "1" src="assets/img/footer-home-9.jpg" alt="" />
+      <p class="wow animate__fadeInUp" data-wow-offset = "10" data-wow-iteration = "1"> Copyright © <span>2022 Travel</span></p>
+    </div>
+
+    <!-- wowjs -->
+    <script src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- link slick slider -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
